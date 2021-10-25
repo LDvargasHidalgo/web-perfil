@@ -1,0 +1,199 @@
+body{
+    background-color: white;
+}
+
+.contenedor{
+    display: flex;
+    width: 800px;
+    height: 40px;
+    color: rgb(245, 243, 243);
+    font-size: 30px;
+    line-height: 40px;
+   /* los elementos fuera del ancho del contenedor no se muestren */
+    /* centrar el elemento */
+    position:absolute ;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:5px ;
+    margin: auto;
+    overflow: hidden;
+}
+
+.nombre{
+    color: rgb(245, 243, 243);
+    text-align: center;
+    margin-top:30px;
+    width: 85%;
+    padding-top: 30px;
+    
+
+}
+
+.descripcion {
+    /* quitar los estilos de la lista */
+  list-style: none;  
+  animation: cambiar 10s infinite;
+}
+
+ul, p{
+    margin: 0;
+}
+
+/* paradas de la animación */
+@keyframes cambiar {
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+    25%{margin-top: -40px;}
+    50%{margin-top: -40px;}
+    55%{margin-top: -80px;}
+    80%{margin-top: -80;}
+    85%{margin-top: -40px;}
+    95%{margin-top: -40px;}
+    100%{margin-top: 0;}
+    }
+
+h1{
+    font-family: cursive;
+}
+
+
+.mydiv {
+    
+	position: relative;
+	margin: 45px auto 0;
+	width: 98%;
+	height: 550px;
+    background: linear-gradient(90deg, rgb(12, 6, 6), #352d2d);
+}
+
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}
+.foto{
+    width: 300px;
+    margin-left:66% ;
+    width: 250px;
+    border-radius: 50% ;
+    border: solid 2px orange;
+    box-shadow:0 0px 15px orange;
+}
+.redes-sociales a{
+    padding:30px;
+    color: rgb(252, 247, 247);  
+}
+
+.redes-sociales a .fa-facebook-f{
+    background: #65aaf8;
+    padding: 10px;
+}
+
+.redes-sociales a .fa-github{
+    background: #b104b1;
+    padding: 10px;
+}
+
+.redes-sociales a .fa-linkedin{
+    background: #3032c9;
+    padding: 10px;
+}
+.redes-sociales{
+    margin-top: -50px;
+   
+}
+
+
+.porta{
+    font-size:50px;
+    font-family: cursive;
+}
+
+.principal{
+    margin-top: 50px;
+    font-family: 'Roboto';
+}
+
+/* tarjeta1 y 3 */
+.card-header-first{
+    margin-top: -40px;
+    height:120px;
+    background:linear-gradient(-90deg,#65aaf8, #5767f2);
+    box-shadow: 1px 6px 15px #746f6f; /* sombra */
+    background-color: white;
+}
+
+/* tarjeta2 */
+.card-header-second{
+    margin: 25px -25px 0 -25px;
+    height:120px;
+    background:linear-gradient(-90deg,#f0bde7, #F28A57);
+    box-shadow: 1px 7px 15px #a2a2a2; /* sombra */
+}
+
+
+/* Efecto shadow para todas las tarjetas */
+.card-section{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2 px 10px 0 rgba(0,0,0,.12);
+}
+
+/* efecto sobra para pasar encima el mouse */
+.card-section:hover{
+    box-shadow: 1px 1px 20px #d2d2d2;
+}
+
+.portafolio{
+    box-shadow:  1px 1px 15px #000;
+    width: 30%;
+    margin-left:475px;
+}
+
+.sobreMi-flex, .mitad-flex{
+    display: flex;
+}
+.columnas p{
+    margin: 15px;
+}
+.foto2 img{
+      
+    width: 280px;
+    margin-left: 40px;
+    border-radius: 10%;
+    border: solid 4px orange;   
+}
+
+#perfil{
+    margin-left: 280px;
+}
+
+
+
+
+
